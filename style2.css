@@ -1,0 +1,86 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #00aaff, #0088cc); /* Blue gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #e6f7ff; /* Soft blue background for container */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    transition: all 0.3s ease;
+}
+
+h1 {
+    color: #005580; /* Darker blue for heading */
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.converter label {
+    display: block;
+    margin: 15px 0 5px;
+    color: #003d66; /* Dark blue for labels */
+    font-weight: bold;
+}
+
+.converter input,
+.converter select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #99ccff; /* Light blue border */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #cceeff; /* Light blue input background */
+}
+
+.converter input:focus,
+.converter select:focus {
+    border-color: #0073e6; /* Darker blue on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 115, 230, 0.3);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #0073e6; /* Blue button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #0059b3; /* Darker blue on hover */
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#result {
+    font-size: 18px;
+    color: #005580; /* Blue result text */
+    font-weight: bold;
+    margin-top: 20px;
+}
